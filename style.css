@@ -314,7 +314,104 @@ body {
     border-bottom: 1px solid rgba(0,0,0,0.1);
 }
 
-.details .recentOrders table tr:hover {
+.details .recentOrders table tr:last-child {
+    border-bottom: none;
+}
+
+.details .recentOrders table tbody tr:hover {
     background: var(--blue);
+    color: var(--white);
+}
+
+.details .recentOrders table tr td {
+    padding: 10px
+}
+
+.details .recentOrders table tr td:last-child,
+.details .recentOrders table tr td:nth-child(2) {
+    text-align: end;
+}
+
+.details .recentOrders table tr td:nth-child(3) {
+    text-align: center;
+}
+
+.status {
+    border-radius: 4px;
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 500;
+    padding: 2px 4px;
+}
+
+.status.delivered {
+    background: #8de02c;
+}
+
+.status.pending {
+    background: #f9ca3f;
+}
+
+.status.return {
+    background: #f00;
+}
+
+.status.inprogress {
+    background: #1975ce;
+}
+
+.recentCustomers {
+    background: var(--white);
+    border-radius: 20px;
+    box-shadow: 0 7px 25px rgba(0,0,0,0.1);
+    display: grid;
+    min-height: 500px;
+    padding: 20px;
+    position: relative;
+}
+
+.recentCustomers .imgBox {
+    border-radius: 50%;
+    height: 40px;
+    overflow: hidden;
+    position: relative;
+    width: 40px;
+}
+
+.recentCustomers .imgBox img {
+    height: 100%;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.recentCustomers table tr:hover {
+    background: var(--blue);
+    color: var(--white);
+}
+
+.recentCustomers table tr td {
+    padding: 12px 10px;
+}
+
+.recentCustomers table tr td h4 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.2em;
+}
+
+.recentCustomers table tr td h4 span {
+    color: var(--black2);
+    font-size: 14px;
+}
+
+.recentCustomers table tr:hover {
+    background: var(--blue);
+    color: var(--white);
+}
+
+.recentCustomers table tr:hover td h4 span {
     color: var(--white);
 }
